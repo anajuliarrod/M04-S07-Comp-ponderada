@@ -65,7 +65,7 @@ export default function App() {
         });
       });
 
-      client.on('message', (topic: any, message: any) => {
+      client.on('message', (_topic: any, message: any) => {
         try {
           const payload = JSON.parse(message.toString());
           const rssi = payload.rssi;
@@ -132,7 +132,7 @@ export default function App() {
   return (
     <div className="app">
       <div className="container">
-        <h1>📊 Dashboard de Sinal WiFi</h1>
+        <h1>Dashboard de Sinal WiFi</h1>
         <p className="subtitle">Monitoramento em tempo real da potência do sinal WiFi (dBm) via MQTT</p>
 
         <div className="status-grid">
@@ -141,7 +141,7 @@ export default function App() {
             <p className={isConnected ? 'connected' : 'disconnected'}>
               {connectionStatus}
             </p>
-            <small>broker.emqx.io</small>
+            <small>broker.hivemq.io</small>
           </div>
 
           <div className="card" style={{ backgroundColor: quality.bgColor }}>
@@ -216,7 +216,7 @@ export default function App() {
         </div>
 
         <div className="info-box">
-          <strong>ℹ️ Sobre o projeto:</strong> Este dashboard conecta ao broker MQTT público (broker.emqx.io) 
+          <strong>ℹ️ Sobre o projeto:</strong> Este dashboard conecta ao broker MQTT público (broker.hivemq.com) 
           e consome dados publicados pelo ESP32. O gráfico mostra a potência do sinal WiFi em dBm em tempo real.
         </div>
       </div>
