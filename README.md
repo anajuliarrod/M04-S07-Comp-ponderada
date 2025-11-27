@@ -33,8 +33,8 @@ Este projeto mede a potência do sinal WiFi em dBm usando um ESP32, publica os d
 - Teste 3: Vale pronunciado (queda dentro do elevador, recuperação ao sair)
 
 ---
-
-## (Vídeo de Demonstração)[] 
+### (Deploy)[https://m04-s07-comp-ponderada.vercel.app/]
+### (Vídeo de Demonstração)[https://youtu.be/5UD5tp9oK3I?si=0cXv247DMa-W5i03] 
 ---
 ## Interpretação dos Dados
 
